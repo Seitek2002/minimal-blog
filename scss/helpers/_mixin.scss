@@ -1,0 +1,6 @@
+
+@mixin fontStyle($color, $size, $albina: 400) {
+    color: $color;
+    font-size: $size;
+    font-weight: $albina;
+}
