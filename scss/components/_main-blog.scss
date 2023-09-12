@@ -16,8 +16,6 @@
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        display: flex;
-        flex-direction: column;
         height: min-content;
 
         h2 {
@@ -47,3 +45,35 @@
     }
 }
 
+@media screen and (max-width: 948px) {
+    .main-blog {
+        &__item {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+        &__info {
+            max-width: 50%;
+            margin-left: auto;
+        }
+
+        &__img {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main-blog {
+        &__info {
+            max-width: 100%;
+            border-top: none;
+            border-left: none;
+        }
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
